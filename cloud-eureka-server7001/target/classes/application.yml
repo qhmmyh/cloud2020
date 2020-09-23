@@ -1,0 +1,17 @@
+server:
+  port: 7001
+  
+spring:
+  application:
+    name: cloud-eureka-server
+
+eureka:
+  instance:
+    hostname: eureka7001.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/
+  server:
+    peer-node-read-timeout-ms: 2000
