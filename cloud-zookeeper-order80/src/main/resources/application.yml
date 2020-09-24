@@ -1,0 +1,13 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-order-consumer
+  cloud:
+    zookeeper:
+      connect-string: 192.168.101.26:2181
+    
+myconfig:
+  swagger-ui-open: true
+  
