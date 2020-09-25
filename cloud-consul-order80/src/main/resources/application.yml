@@ -1,0 +1,17 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-order-consumer
+  cloud:
+    consul:
+      host: 192.168.101.26
+      port: 8500
+      discovery:
+        service-name: consul-consumer-order
+        heartbeat:
+          enabled: true
+    
+myconfig:
+  swagger-ui-open: true
